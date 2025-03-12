@@ -1,0 +1,58 @@
+HTML
+
+1) HTML (HyperText Markup Language) is the standard language used to create and structure web pages. It uses elements and tags to define content like text, images, and links for display in web browsers.
+
+2) HTML is used to structure web pages by defining elements like headings, paragraphs, images, and links. It provides the foundation for web development, allowing browsers to display content properly.
+
+3) Emmet is a plugin for code editors that speeds up HTML and CSS coding by using abbreviations that expand into full code snippets. It helps developers write code faster with less typing.
+
+4) The shortcut to create an Emmet boilerplate for HTML is: Type ! and press Tab or Enter.
+
+5) The structure of an HTML document consists of several key elements that define the webpage layout.
+
+6) The <head> tag in HTML contains metadata and links to external resources that help define the document’s properties. It includes elements like <title>, <meta>, <link>, <style>, and <script>, but its content is not displayed on the webpage.
+
+7) The <body> tag in HTML contains all the visible content of a webpage, such as text, images, links, buttons, and other elements. Everything inside the <body> tag is displayed in the browser.
+
+8) Three important HTML elements are:
+
+<html> – The root element that wraps the entire HTML document.
+<head> – Contains metadata, title, and links to stylesheets or scripts.
+<body> – Holds all the visible content displayed on the webpage.
+
+9) A tag is a keyword enclosed in angle brackets (<>) that defines an HTML element, such as <p> or <div>.
+
+An element consists of an opening tag, content (if any), and a closing tag (e.g., <p>Hello</p>), or it can be self-closing like <img>.
+
+CSS
+
+1) CSS (Cascading Style Sheets) is a styling language used to control the layout, colors, fonts, and overall appearance of HTML elements. It enhances web pages by making them visually appealing and responsive.
+
+2) CSS is used to style and format HTML elements, improving the design, layout, and responsiveness of web pages. It separates content from presentation, making web development more efficient.
+
+3) You can connect CSS to HTML using an external stylesheet, internal styles, or inline styles.
+
+4) Fonts: Use Google Fonts and link it in <head>
+   Colors: Use CSS properties like color, background-color, or get colors from sites like Coolors
+   Images: Use local images (<img src="image.jpg">) or get from Unsplash
+   CDN: Use CDN links for frameworks like Bootstrap, Tailwind, or FontAwesome
+
+5) Text Family – Properties like font-size, font-family, text-align, line-height.
+Color & Background Family – Includes color, background-color, background-image.
+Box Model – Defines layout using margin, padding, border, and width/height.
+
+6) Use <img> tag when the image is part of the content, like a product image or profile picture.
+
+Use CSS background-image for decorative images, such as backgrounds or patterns.
+
+7) A layout defines how elements are arranged on a webpage. CSS provides Flexbox and Grid for layouts.
+
+Flexbox Properties
+display: flex; – Enables Flexbox
+flex-direction: row | column; – Defines item direction
+justify-content: center | space-between; – Aligns items horizontally
+align-items: center | flex-start; – Aligns items vertically
+flex-wrap: wrap; – Allows items to wrap if needed
+
+8) Tailwind CSS is a utility-first CSS framework that provides pre-defined classes for styling. It speeds up development by reducing the need for custom CSS.
+

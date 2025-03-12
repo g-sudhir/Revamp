@@ -1,0 +1,17 @@
+{
+  "name": "assignment-05",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "sudhir",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "watch": "npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch"
+  },
+  "dependencies": {
+    "@tailwindcss/cli": "^4.0.12",
+    "assignment-05": "file:",
+    "tailwindcss": "^4.0.12"
+  }
+}

@@ -1,0 +1,14 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap'); */
+@import "tailwindcss";
+
+@theme {
+    --font-roboto: 'Roboto',sans-serif;
+}
+
+#hero{
+    background: none;
+    background-image: url("https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/foodmunch-banner-bg.png");
+    background-size: cover;
+    height: 600px;
+}
+
