@@ -1,0 +1,111 @@
+# JavaScript Fundamentals Assignment
+
+## 1. What is JavaScript?
+JavaScript is a versatile, high-level programming language primarily used for adding interactivity to web pages. It allows developers to create dynamic content, handle user inputs, manipulate HTML and CSS, and interact with APIs. JavaScript runs in web browsers and is a key component of web development, along with HTML and CSS.
+
+---
+
+## 2. Variables and Types
+```javascript
+let userAge = 25; // A numerical value representing age
+let userName = "John Doe"; // A string value representing a person's name
+
+console.log("User Age:", userAge);
+console.log("User Name:", userName);
+```
+
+---
+
+## 3. Comments in JavaScript
+```javascript
+/*
+   This function takes a name as an argument and returns a greeting message.
+   It is used to display a personalized greeting to the user.
+*/
+```
+
+---
+
+## 4. Operations
+```javascript
+let num1 = 10;
+let num2 = 5;
+
+console.log("Addition:", num1 + num2);
+console.log("Subtraction:", num1 - num2);
+console.log("Multiplication:", num1 * num2);
+console.log("Division:", num1 / num2);
+```
+
+---
+
+## 5. Data Types
+```javascript
+let myString = "Hello, World!"; // String
+let myNumber = 42; // Number
+let myBoolean = true; // Boolean
+let myArray = [1, 2, 3, 4, 5]; // Array
+
+console.log("String Example:", myString);
+console.log("Number Example:", myNumber);
+console.log("Boolean Example:", myBoolean);
+console.log("Array Example:", myArray);
+```
+
+**Explanation:**  
+- **String:** Represents text enclosed in quotes.  
+- **Number:** Represents numerical values (integers or floating-point numbers).  
+- **Boolean:** Represents `true` or `false` values.  
+- **Array:** A collection of values stored in a list format.
+
+---
+
+## 6. Functions in JavaScript
+```javascript
+function greetUser(name) {
+    return "Hello, " + name + "!";
+}
+
+console.log(greetUser("Alice"));
+```
+
+---
+
+## 7. if Else in JavaScript
+```javascript
+let temperature = 35;
+
+if (temperature > 30) {
+    console.log("It's a hot day!");
+} else {
+    console.log("The temperature is moderate.");
+}
+```
+
+---
+
+## 8. FOR LOOP
+```javascript
+for (let i = 1; i <= 5; i++) {
+    console.log(i);
+}
+```
+
+---
+
+## 9. Loose vs Strict Equality
+```javascript
+let a = "5";
+let b = 5;
+
+console.log(a == b); // true (loose equality, converts the string "5" to number 5)
+console.log(a === b); // false (strict equality, checks both value and type)
+```
+
+**Explanation:**  
+- **Loose Equality (`==`)**: Compares values after converting types if necessary.  
+- **Strict Equality (`===`)**: Compares both value and type without type conversion.
+
+---
+
+This document covers all the fundamental JavaScript concepts in the assignment.
