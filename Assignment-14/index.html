@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bacon Ipsum Fetcher</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      padding: 2rem;
+      margin: 0;
+      background: #f7f7f7;
+      color: #333;
+    }
+    .container {
+      max-width: 700px;
+      margin: auto;
+      background: #fff;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 0 12px rgba(0,0,0,0.1);
+    }
+    h1 {
+      text-align: center;
+      color: #d35400;
+    }
+    #baconText {
+      margin-top: 1rem;
+      line-height: 1.6;
+    }
+    #fetchBtn {
+      display: block;
+      margin: 1rem auto;
+      padding: 10px 20px;
+      font-size: 1rem;
+      background-color: #e67e22;
+      border: none;
+      color: white;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+    #fetchBtn:hover {
+      background-color: #cf711e;
+    }
+    #loading {
+      text-align: center;
+      font-style: italic;
+      color: #999;
+      margin-top: 1rem;
+    }
+    @media (max-width: 600px) {
+      .container {
+        padding: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>🥓 Bacon Ipsum Generator</h1>
+    <button id="fetchBtn">Fetch Bacon Ipsum</button>
+    <div id="loading" style="display: none;">Loading bacon goodness...</div>
+    <div id="baconText"></div>
+  </div>
+
+  <script>
+    const baconText = document.getElementById("baconText");
+    const loading = document.getElementById("loading");
+    const fetchBtn = document.getElementById("fetchBtn");
+
+    function fetchBacon() {
+      baconText.innerHTML = "";
+      loading.style.display = "block";
+
+      fetch("https://baconipsum.com/api/?type=all")
+        .then(response => {
+          if (!response.ok) {
+            throw new Error("Failed to fetch bacon!");
+          }
+          return response.json();
+        })
+        .then(data => {
+          loading.style.display = "none";
+          data.forEach(para => {
+            const p = document.createElement("p");
+            p.textContent = para;
+            baconText.appendChild(p);
+          });
+        })
+        .catch(error => {
+          loading.style.display = "none";
+          baconText.innerHTML = `<p style="color:red;">Error: ${error.message}</p>`;
+        });
+    }
+
+    fetchBacon();
+
+    fetchBtn.addEventListener("click", fetchBacon);
+  </script>
+
+</body>
+</html>
