@@ -1,0 +1,65 @@
+@import 'tailwindcss';
+
+/* <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navbar</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+    <section>
+        <div class="2xl:container">
+            <div class="w-[90%] h-[10vh] mx-auto px-6 flex items-center justify-between bg-green-100 relative">
+                <div>LOGO</div>
+                
+                <!-- Menu Toggle Button -->
+                <div class="md:hidden flex justify-end">
+                    <!-- Open (Hamburger) Icon -->
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 48 48"
+                        width="2em"
+                        height="2em"
+                        id="dynamic-open"
+                        class="md:hidden cursor-pointer"
+                    >
+                        <g fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="4">
+                            <path d="M7.94971 11.9497H39.9497"></path>
+                            <path d="M7.94971 23.9497H39.9497"></path>
+                            <path d="M7.94971 35.9497H39.9497"></path>
+                        </g>
+                    </svg>
+
+                    <!-- Close (X) Icon -->
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        width="2em"
+                        height="2em"
+                        id="dynamic-close"
+                        class="hidden md:hidden cursor-pointer"
+                    >
+                        <g fill="currentColor" fill-rule="evenodd" clip-rule="evenodd">
+                            <path d="M5.47 5.47a.75.75 0 0 1 1.06 0l12 12a.75.75 0 1 1-1.06 1.06l-12-12a.75.75 0 0 1 0-1.06"></path>
+                            <path d="M18.53 5.47a.75.75 0 0 1 0 1.06l-12 12a.75.75 0 0 1-1.06-1.06l12-12a.75.75 0 0 1 1.06 0"></path>
+                        </g>
+                    </svg>   
+                </div>
+
+                <!-- Navigation Menu -->
+                <div id="menu" class="hidden absolute top-full left-0 w-full bg-green-100 md:static md:flex md:top-0 md:justify-end gap-6 p-4">
+                    <p>HOME</p>
+                    <p>ABOUT</p>
+                    <p>CONTACT</p>
+                    <p>SERVICES</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="./index.js"></script>
+
+</body>
+</html> */
